@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(wave-line-flag-of-russia-vector.jpg);
+}
+p, h1 {
+    font-family: "Times New Roman", Serif;
+    font-size: 24px;
+    text-align: center;
+}
+#StoliciRossii {
+    font-size: 32px;
+    text-align: center;
+    background-color: cornflowerblue;
+    border-radius: 20px;
+    color: cornsilk;
+    margin: 40px auto;
+    width: 700px;
+}
+.wrapperCard {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 20px;
+    margin: 0 auto;
+    width: 700px;
+    height: 700px;
+}
+.card {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+.Answer, .question {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-family: "Times New Roman", Serif;
+    border-radius: 10px;
+}
+.Answer {
+    background: linear-gradient(#08aeea, #2af598);
+    z-index: 2;
+    backface-visibility: hidden;
+}
+.question {
+    background: linear-gradient(#f8da61, #ff5acd);
+    z-index: 1;
+    transform: rotateY(180deg);
+
+}
+.question img{
+    height: 170px;
+    width: 155px;
+}
+.containerCard:hover > .card {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: row;
+}
+.containerCard {
+    perspective: 500px;
+}
+
+
