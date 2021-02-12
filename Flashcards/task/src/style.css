@@ -48,17 +48,19 @@ p, h1 {
     font-size: 3em;
     font-family: "Times New Roman", Serif;
     border-radius: 10px;
+    backface-visibility: hidden;
 }
 .Answer {
     background: linear-gradient(#08aeea, #2af598);
     z-index: 2;
-    backface-visibility: hidden;
 }
 .question {
+    height: 100%;
+    width: 100%;
     background: linear-gradient(#f8da61, #ff5acd);
     z-index: 1;
     transform: rotateY(180deg);
-
+    flex-direction: column;
 }
 .question img{
     height: 170px;
@@ -72,5 +74,11 @@ p, h1 {
 .containerCard {
     perspective: 500px;
 }
+.city {
 
+}
+.pk {
+    padding-bottom: 11px;
+    line-height: 20px;
+}
 
